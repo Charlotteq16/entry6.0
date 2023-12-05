@@ -1,0 +1,228 @@
+
+body {
+    background-color: rgb(34, 38, 54);
+}
+
+.next{
+    color: white;
+    font-size: xx-large;
+    position:absolute;
+    right: 5%;
+    top: 205%;
+}
+
+.homepage{
+    color: white;
+    font-size: xx-large;
+    position:absolute;
+    left: 45%;
+    top: 205%;
+}
+
+.previous{
+    color: white;
+    font-size: xx-large;
+    position:absolute;
+    left: 5%;
+    top: 205%;
+}
+
+.image {
+    border: dashed rgb(255, 255, 255);
+    border-width: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bw-image {
+    border: dashed rgb(255, 255, 255);
+    border-width: 10px;
+    position: absolute;
+    left: 50%;
+    top: 155%;
+    transform: translate(-50%, -50%);
+}
+
+.number6 {
+    font-size: xx-large;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: rgb(34, 38, 54);
+    border: solid rgb(255, 255, 255);
+    border-width: 5px;
+    color: white;
+}
+
+.info-word {
+    color: white;
+    font-size: 500%;
+    position: absolute;
+    top: 120%;
+    left: 15%;
+    transform: rotate(-20deg);
+}
+
+.INFO-CONTAINER {
+    width: 15%;
+    height: 8%;
+    background-color: black;
+    position:absolute;
+    top: 135%;
+    left: 17%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0px;
+    color: white;
+    border: solid;
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+/* Create the arrow/bubble tail */
+.INFO-CONTAINER::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 3%;
+    margin-left: -10px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    transform: rotate(162deg);
+}
+
+
+.information {
+    width: 90%;
+    position: relative;
+    left: 40px;
+    top: 80px;
+}
+
+.INFO-CONTAINER:hover::before {
+    opacity: 0;
+}
+
+.INFO-CONTAINER:hover {
+   
+    height: 40%;
+    width: 30%;
+    font-size: 20px;
+    flex: 4;
+}
+
+.thoughts-word{
+    color: white;
+    font-size: 500%;
+    position:absolute;
+    bottom:-100%;
+    right:10%;
+    transform: rotate(-10deg);
+}
+
+.thoughts-container{
+    width: 15%;
+    height: 8%;
+    background-color: black;
+    position:absolute;
+    bottom: -85%;
+    right: 17%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0px;
+    color: white;
+    border: solid;
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.thoughts-container:hover{
+    height: 60%;
+    width: 50%;
+    font-size: 20px;
+    flex: 4;
+}
+
+.thoughts-container::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    right: 3%;
+    margin-left: -10px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    transform: rotate(-15deg);
+}
+
+.thoughts-container:hover::before {
+    opacity: 0;
+}
+
+.Thoughts{
+    width: 80%;
+    height: 90%;
+    position: relative;
+    left: 75px;
+    top: 100px;
+}
+
+@media screen and (max-width: 1400px){
+    .thoughts-container:hover{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .thoughts-container:hover{
+        font-size: 14px;
+    }
+    .Thoughts{
+        position: relative;
+        left: 45px;
+        width: 75%;
+        height: 95%;
+        top: 90px;
+    }
+
+    .bw-image{
+        width: 50%;
+    }
+
+    .INFO-CONTAINER:hover{
+        font-size: 16px;
+    }
+
+    .information{
+        position: relative;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .thoughts-container:hover{
+        font-size: 12px;
+    }
+
+    .Thoughts{
+        position: relative;
+        left: 40px;
+        width: 75%;
+        height: 95%;
+    }
+
+    .INFO-CONTAINER:hover{
+        font-size: 14px;
+    }
+    .information{
+        width: 70%;
+    }
+
+    .image{
+        width: 70%;
+    }
+}
+
